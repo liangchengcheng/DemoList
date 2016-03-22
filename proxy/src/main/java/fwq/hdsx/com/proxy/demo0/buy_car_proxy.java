@@ -9,7 +9,6 @@ public class buy_car_proxy implements buy_car {
         return people;
     }
 
-
     public void setPeople(People people) {
         this.people = people;
     }
