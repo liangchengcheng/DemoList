@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="software_textColor_selected">#1bb8ce</color>
+    <color name="software_textColor_unselected">#FFDCE0DF</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="bgcolor">#00ffffff</color>
+    <color name="title_bgcolor">#1AB9CF</color>
+
+    <color name="red">#FFC93437</color>
+    <color name="blue">#FF375BF1</color>
+    <color name="blue_pressed">#78d6e2</color>
+    <color name="yellow">#FFF7D23E</color>
+    <color name="green">#FF34A350</color>
+    <color name="uploaded_item_color">#fafafa</color>
+    <color name="header_bg2">#f4f4f4</color>
+    <color name="black">#000000</color>
+    <color name="backgroundColor">#f4f4f4</color>
+
+
+    <color name="hintColor">#c1ddf3</color>
+    <color name="white">#FFFFFF</color>
+    <color name="moreItemTextColor">#323232</color>
+    <color name="info_bg">#d6e5f2</color>
+    <color name="text_no_click">#888888</color>
+    <color name="color_worker_list_bg">#55888888</color>
+    <color name="line_diliver">#33888888</color>
+
+
+    <color name="opacity50">#80000000</color>
+    <color name="dateSureColor">#ee9500</color>
+    <color name="lightBlue">#374B69</color>
+    <color name="dividerColor">#dedede</color>
+
+
+    <drawable name="white">#FFFFFF</drawable>
+    <drawable name="info_bg">#d6e5f2</drawable>
+    <drawable name="radio_button_n">#f4f4f4</drawable>
+    <color name="opacity60">#99000000</color>
+    <color name="dialogTitle">#dee4ee</color>
+    <color name="dialogContent">#eceff5</color>
+    <color name="divider">#33000000</color>
+</resources>

@@ -18,7 +18,9 @@ public abstract class Notify {
     protected NotificationCompat.Builder builder;
 
     public Notify(Context context) {
+        //获取上下文对象
         this.context = context;
+        //创建NotificationManager和builder
         nm = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
         builder = new NotificationCompat.Builder(context);
         builder.setSmallIcon(R.mipmap.ic_launcher)

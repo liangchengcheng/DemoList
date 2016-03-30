@@ -6,6 +6,7 @@ package fwq.hdsx.com.proxy.demo0;
 public class People implements buy_car {
 
     private int cash;
+
     private String username;
 
     public int getCash() {

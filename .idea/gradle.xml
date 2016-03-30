@@ -10,12 +10,16 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/progressdialog" />
+            <option value="$PROJECT_DIR$/proxy" />
           </set>
         </option>
         <option name="myModules">
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/progressdialog" />
+            <option value="$PROJECT_DIR$/proxy" />
           </set>
         </option>
       </GradleProjectSettings>

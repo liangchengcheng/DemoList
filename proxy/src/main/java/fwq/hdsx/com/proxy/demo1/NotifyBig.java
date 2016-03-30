@@ -18,8 +18,10 @@ public class NotifyBig extends Notify{
     @Override
     public void send() {
         Notification notification=builder.build();
+
         notification.contentView=new RemoteViews(context.getPackageName(), R.layout.activity_main);
         notification.bigContentView=new RemoteViews(context.getPackageName(),R.layout.activity_main);
+
         nm.notify(0,notification);
 
     }

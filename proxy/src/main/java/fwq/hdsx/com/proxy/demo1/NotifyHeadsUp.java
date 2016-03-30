@@ -19,11 +19,12 @@ public class NotifyHeadsUp extends Notify{
     public void send() {
 
         Notification notification=builder.build();
+
         notification.contentView=new RemoteViews(context.getPackageName(), R.layout.activity_main);
         notification.bigContentView=new RemoteViews(context.getPackageName(),R.layout.activity_main);
         notification.headsUpContentView=new RemoteViews(context.getPackageName(), R.layout.activity_main);
-        nm.notify(0,builder.build());
 
+        nm.notify(0,builder.build());
     }
 
     @Override

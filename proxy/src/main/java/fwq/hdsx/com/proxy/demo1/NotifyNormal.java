@@ -14,7 +14,9 @@ public class NotifyNormal extends  Notify{
     @Override
     public void send() {
         Notification notification=builder.build();
+
         notification.contentView=new RemoteViews(context.getPackageName(), R.layout.activity_main);
+
         nm.notify(0,notification);
 
     }
