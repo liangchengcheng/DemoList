@@ -1,1 +1,1 @@
-include ':app', ':proxy', ':progressdialog'
+include ':app', ':proxy', ':progressdialog', ':toastdemo', ':tipview'

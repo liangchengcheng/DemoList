@@ -6,6 +6,8 @@
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/progressdialog/progressdialog.iml" filepath="$PROJECT_DIR$/progressdialog/progressdialog.iml" />
       <module fileurl="file://$PROJECT_DIR$/proxy/proxy.iml" filepath="$PROJECT_DIR$/proxy/proxy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tipview/tipview.iml" filepath="$PROJECT_DIR$/tipview/tipview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/toastdemo/toastdemo.iml" filepath="$PROJECT_DIR$/toastdemo/toastdemo.iml" />
     </modules>
   </component>
 </project>

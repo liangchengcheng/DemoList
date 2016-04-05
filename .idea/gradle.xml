@@ -12,6 +12,8 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/progressdialog" />
             <option value="$PROJECT_DIR$/proxy" />
+            <option value="$PROJECT_DIR$/tipview" />
+            <option value="$PROJECT_DIR$/toastdemo" />
           </set>
         </option>
         <option name="myModules">
@@ -20,6 +22,8 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/progressdialog" />
             <option value="$PROJECT_DIR$/proxy" />
+            <option value="$PROJECT_DIR$/tipview" />
+            <option value="$PROJECT_DIR$/toastdemo" />
           </set>
         </option>
       </GradleProjectSettings>
