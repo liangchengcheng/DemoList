@@ -1,0 +1,458 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0672a8"
+    android:overScrollMode="ifContentScrolls"
+    android:scrollbars="vertical"
+    tools:context=".CPSDemoActivity" >
+    
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/down"
+        android:gravity="left|center"
+        android:paddingBottom="2dp"
+        android:paddingTop="2dp"
+        android:text="@string/textview_CPS"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#B0FB04"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.86"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView_Birthday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_Nation"
+                android:layout_marginTop="10dp"
+                android:layout_alignLeft="@+id/textView_Nation"
+                android:text="@string/textview_Birthday"
+                android:textColor="#C5F4F5"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView_Gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/editText_Name"
+                android:layout_alignBaseline="@+id/textView_Name"
+                android:layout_marginLeft="10dp"
+                android:text="@string/textview_Gender"
+                android:textColor="#C5F4F5"
+                android:textSize="18sp" />
+            
+            <TextView
+                android:id="@+id/textView_Nation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_Name"
+                android:layout_marginTop="10dp"
+                android:layout_alignLeft="@+id/textView_Name"
+                android:text="@string/textview_Nation"
+                android:textColor="#C5F4F5"
+                android:textSize="18sp" />
+            
+            <EditText
+                android:id="@+id/editText_Gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/textView_Gender"
+                android:layout_marginLeft="4dp"
+                android:layout_toRightOf="@id/textView_Gender"
+                android:inputType="text"
+                android:text="@string/common_Empty"
+                android:textColor="#B0FB04" />
+
+            <EditText
+                android:id="@+id/editText_Nation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/textView_Nation"
+                android:layout_marginLeft="4dp"
+                android:layout_toRightOf="@id/textView_Nation"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:inputType="text"
+                android:text="@string/common_Empty"
+                android:textColor="#B0FB04" />
+
+            <EditText
+                android:id="@+id/editText_Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView_Name"
+                android:layout_marginLeft="4dp"
+                android:layout_toRightOf="@+id/textView_Name"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:inputType="text"
+                android:text="@string/common_Empty"
+                android:textColor="#B0FB04" >
+
+                <requestFocus />
+            </EditText>
+            
+            <EditText
+                android:id="@+id/editText_BirthDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView_Birthday"
+                android:layout_marginLeft="4dp"
+                android:layout_toRightOf="@+id/textView_Birthday"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:inputType="text"
+                android:text="@string/common_Empty"
+                android:textColor="#B0FB04" >
+
+            </EditText>
+
+            <TextView
+                android:id="@+id/textView_Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="4dp"
+                android:text="@string/textview_Name"
+                android:textColor="#C5F4F5"
+                android:textSize="18sp" />
+            
+            <TextView
+                android:id="@+id/textView_Education"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_Birthday"
+                android:layout_marginTop="10dp"
+                android:layout_alignLeft="@+id/textView_Name"
+                android:text="@string/textview_Education"
+                android:textColor="#C5F4F5"
+                android:textSize="18sp" />
+            
+            <EditText
+                android:id="@+id/editText_Education"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView_Education"
+                android:layout_marginLeft="4dp"
+                android:layout_toRightOf="@+id/textView_Education"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:inputType="text"
+                android:text="@string/common_Empty"
+                android:textColor="#B0FB04" >
+
+            </EditText>
+
+        </RelativeLayout>
+        
+            
+        <ImageView
+            android:id="@+id/imageView_show"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.10"
+            android:contentDescription="@string/common_None"
+            android:focusable="false"
+            android:src="@drawable/no_128" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+                android:id="@+id/textView_Addr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="4dp"
+                android:text="@string/textview_Addr"
+                android:textColor="#C5F4F5"
+                android:textSize="18sp" />
+        
+        <EditText
+            android:id="@+id/editText_Addr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView_Addr"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@+id/textView_Addr"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:inputType="text"
+            android:text="@string/common_Empty"
+            android:textColor="#B0FB04" >
+
+            </EditText>
+            
+        <TextView
+                android:id="@+id/textView_Tel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_Addr"
+                android:layout_marginTop="10dp"
+                android:layout_alignLeft="@+id/textView_Addr"
+                android:text="@string/textview_Tel"
+                android:textColor="#C5F4F5"
+                android:textSize="18sp" />
+        
+        <EditText
+            android:id="@+id/editText_Tel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView_Tel"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@+id/textView_Tel"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:inputType="text"
+            android:text="@string/common_Empty"
+            android:textColor="#B0FB04" >
+
+            </EditText>
+            
+        <TextView
+                android:id="@+id/textView_ZipCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/editText_Tel"
+                android:layout_marginTop="10dp"
+                android:layout_alignBaseline="@+id/textView_Tel"
+                android:text="@string/textview_ZipCode"
+                android:textColor="#C5F4F5"
+                android:textSize="18sp" />
+        
+        <EditText
+            android:id="@+id/editText_ZipCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView_ZipCode"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@+id/textView_ZipCode"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:inputType="text"
+            android:text="@string/common_Empty"
+            android:textColor="#B0FB04" >
+
+            </EditText>
+            
+        <TextView
+                android:id="@+id/textView_Contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_Tel"
+                android:layout_marginTop="10dp"
+                android:layout_alignLeft="@+id/textView_Tel"
+                android:text="@string/textview_Contact"
+                android:textColor="#C5F4F5"
+                android:textSize="18sp" />
+        
+        <EditText
+            android:id="@+id/editText_Contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView_Contact"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@+id/textView_Contact"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:inputType="text"
+            android:text="@string/common_Empty"
+            android:textColor="#B0FB04" >
+
+            </EditText>
+            
+        <TextView
+                android:id="@+id/textView_QualifiNO"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_Contact"
+                android:layout_marginTop="10dp"
+                android:layout_alignLeft="@+id/textView_Contact"
+                android:text="@string/textview_QualifiNO"
+                android:textColor="#C5F4F5"
+                android:textSize="18sp" />
+        
+        <EditText
+            android:id="@+id/editText_QualifiNO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView_QualifiNO"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@+id/textView_QualifiNO"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:inputType="text"
+            android:text="@string/common_Empty"
+            android:textColor="#B0FB04" >
+
+            </EditText>
+            
+        <TextView
+                android:id="@+id/textView_QualifiSort"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_QualifiNO"
+                android:layout_marginTop="10dp"
+                android:layout_alignLeft="@+id/textView_QualifiNO"
+                android:text="@string/textview_QualifiSort"
+                android:textColor="#C5F4F5"
+                android:textSize="18sp" />
+        
+        <EditText
+            android:id="@+id/editText_QualifiSort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView_QualifiSort"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@+id/textView_QualifiSort"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:inputType="text"
+            android:text="@string/common_Empty"
+            android:textColor="#B0FB04" >
+
+            </EditText>
+            
+        <TextView
+                android:id="@+id/textView_CertOrgan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_QualifiSort"
+                android:layout_marginTop="10dp"
+                android:layout_alignLeft="@+id/textView_QualifiSort"
+                android:text="@string/textview_CertOrgan"
+                android:textColor="#C5F4F5"
+                android:textSize="18sp" />
+        
+        <EditText
+            android:id="@+id/editText_CertOrgan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView_CertOrgan"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@+id/textView_CertOrgan"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:inputType="text"
+            android:text="@string/common_Empty"
+            android:textColor="#B0FB04" >
+
+            </EditText>
+            
+        <TextView
+                android:id="@+id/textView_ValidDateTo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_CertOrgan"
+                android:layout_marginTop="10dp"
+                android:layout_alignLeft="@+id/textView_CertOrgan"
+                android:text="@string/textview_ValidDateTo"
+                android:textColor="#C5F4F5"
+                android:textSize="18sp" />
+        
+        <EditText
+            android:id="@+id/editText_ValidDateTo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView_ValidDateTo"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@+id/textView_ValidDateTo"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:inputType="date"
+            android:text="@string/common_Empty"
+            android:textColor="#B0FB04" >
+
+         </EditText>
+            
+        <TextView
+                android:id="@+id/textView_ServOrgan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_ValidDateTo"
+                android:layout_marginTop="10dp"
+                android:layout_alignLeft="@+id/textView_Addr"
+                android:text="@string/textview_ServOrgan"
+                android:textColor="#C5F4F5"
+                android:textSize="18sp" />
+        
+        <EditText
+            android:id="@+id/editText_ServOrgan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView_ServOrgan"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@+id/textView_ServOrgan"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:inputType="text"
+            android:text="@string/common_Empty"
+            android:textColor="#B0FB04" >
+
+        </EditText>
+        
+        <TextView
+                android:id="@+id/textView_TechTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_ServOrgan"
+                android:layout_marginTop="10dp"
+                android:layout_alignLeft="@+id/textView_Addr"
+                android:text="@string/textview_TechTitle"
+                android:textColor="#C5F4F5"
+                android:textSize="18sp" />
+        
+        <EditText
+            android:id="@+id/editText_TechTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView_TechTitle"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@+id/textView_TechTitle"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:inputType="text"
+            android:text="@string/common_Empty"
+            android:textColor="#B0FB04" >
+
+        </EditText>
+
+    </RelativeLayout>
+
+</LinearLayout>

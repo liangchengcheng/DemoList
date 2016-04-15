@@ -1,0 +1,334 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0672a8"
+    android:overScrollMode="ifContentScrolls"
+    android:scrollbars="vertical"
+    tools:context=".RTSDemoActivity" >
+    
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/down"
+        android:gravity="left|center"
+        android:paddingBottom="2dp"
+        android:paddingTop="2dp"
+        android:text="@string/textview_RTS"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#B0FB04"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.78"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textview_RTS_VclPlateColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView_RTS_VclPlate"
+                android:layout_below="@+id/textView_RTS_VclPlate"
+                android:layout_marginTop="10dp"
+                android:text="@string/textview_RTS_VclPlateColor"
+                android:textColor="#C5F4F5"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/editText_RTS_VclPlateColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/textview_RTS_VclPlateColor"
+                android:layout_marginLeft="4dp"
+                android:layout_toRightOf="@id/textview_RTS_VclPlateColor"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:inputType="text"
+                android:text="@string/common_Empty"
+                android:textColor="#B0FB04" />
+
+            <EditText
+                android:id="@+id/editText_RTS_VclPlate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView_RTS_VclPlate"
+                android:layout_marginLeft="4dp"
+                android:layout_toRightOf="@+id/textView_RTS_VclPlate"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:inputType="text"
+                android:text="@string/common_Empty"
+                android:textColor="#B0FB04" />
+
+            <TextView
+                android:id="@+id/textView_RTS_VclPlate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="4dp"
+                android:text="@string/textview_RTS_VclPlate"
+                android:textColor="#C5F4F5"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textview_RTS_VclType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView_RTS_VclPlate"
+                android:layout_below="@+id/textview_RTS_VclPlateColor"
+                android:layout_marginTop="10dp"
+                android:text="@string/textview_RTS_VclType"
+                android:textColor="#C5F4F5"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/editText_RTS_VclType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textview_RTS_VclType"
+                android:layout_marginLeft="4dp"
+                android:layout_toRightOf="@+id/textview_RTS_VclType"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:inputType="text"
+                android:text="@string/common_Empty"
+                android:textColor="#B0FB04" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imageView_show"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.19"
+            android:contentDescription="@string/common_None"
+            android:focusable="false"
+            android:src="@drawable/no_128" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/textview_RTS_Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp"
+            android:text="@string/textview_RTS_Name"
+            android:textColor="#C5F4F5"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editText_RTS_Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textview_RTS_Name"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@+id/textview_RTS_Name"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:inputType="text"
+            android:text="@string/common_Empty"
+            android:textColor="#B0FB04" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/textview_RTS_Addr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textview_RTS_Name"
+            android:layout_below="@+id/textview_RTS_Name"
+            android:layout_marginTop="10dp"
+            android:text="@string/textview_RTS_Addr"
+            android:textColor="#C5F4F5"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editText_RTS_Addr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textview_RTS_Addr"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@+id/textview_RTS_Addr"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:inputType="text"
+            android:text="@string/common_Empty"
+            android:textColor="#B0FB04" />
+
+        <TextView
+            android:id="@+id/textview_RTS_VclModel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textview_RTS_Addr"
+            android:layout_below="@+id/textview_RTS_Addr"
+            android:layout_marginTop="10dp"
+            android:text="@string/textview_RTS_VclModel"
+            android:textColor="#C5F4F5"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editText_RTS_VclModel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textview_RTS_VclModel"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@+id/textview_RTS_VclModel"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:inputType="text"
+            android:text="@string/common_Empty"
+            android:textColor="#B0FB04" />
+
+        <TextView
+            android:id="@+id/textview_RTS_VclTonSeat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textview_RTS_VclModel"
+            android:layout_below="@+id/textview_RTS_VclModel"
+            android:layout_marginTop="10dp"
+            android:text="@string/textview_RTS_VclTonSeat"
+            android:textColor="#C5F4F5"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editText_RTS_VclTonSeat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textview_RTS_VclTonSeat"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@+id/textview_RTS_VclTonSeat"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:inputType="text"
+            android:text="@string/common_Empty"
+            android:textColor="#B0FB04" />
+
+        <TextView
+            android:id="@+id/textview_RTS_VclSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textview_RTS_VclTonSeat"
+            android:layout_below="@+id/textview_RTS_VclTonSeat"
+            android:layout_marginTop="10dp"
+            android:text="@string/textview_RTS_VclSize"
+            android:textColor="#C5F4F5"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editText_RTS_VclDesp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textview_RTS_VclSize"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@+id/textview_RTS_VclSize"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:inputType="text"
+            android:text="@string/common_Empty"
+            android:textColor="#B0FB04" />
+
+        <TextView
+            android:id="@+id/textview_RTS_WordNO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textview_RTS_VclSize"
+            android:layout_below="@+id/textview_RTS_VclSize"
+            android:layout_marginTop="10dp"
+            android:text="@string/textview_RTS_WordNO"
+            android:textColor="#C5F4F5"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editText_RTS_WordNO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textview_RTS_WordNO"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@+id/textview_RTS_WordNO"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:inputType="date"
+            android:text="@string/common_Empty"
+            android:textColor="#B0FB04" />
+
+        <TextView
+            android:id="@+id/textview_RTS_AuthOrgan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textview_RTS_Name"
+            android:layout_below="@+id/textview_RTS_WordNO"
+            android:layout_marginTop="10dp"
+            android:text="@string/textview_RTS_AuthOrgan"
+            android:textColor="#C5F4F5"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editText_RTS_AuthOrgan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textview_RTS_AuthOrgan"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@+id/textview_RTS_AuthOrgan"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:inputType="text"
+            android:text="@string/common_Empty"
+            android:textColor="#B0FB04" />
+
+        <TextView
+            android:id="@+id/textview_RTS_AuthDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textview_RTS_Name"
+            android:layout_below="@+id/textview_RTS_AuthOrgan"
+            android:layout_marginTop="10dp"
+            android:text="@string/textview_RTS_AuthDate"
+            android:textColor="#C5F4F5"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editText_RTS_AuthDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textview_RTS_AuthDate"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@+id/textview_RTS_AuthDate"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:inputType="date"
+            android:text="@string/common_Empty"
+            android:textColor="#B0FB04" />
+    </RelativeLayout>
+
+</LinearLayout>

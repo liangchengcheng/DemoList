@@ -2,8 +2,10 @@ package fwq.hdsx.com.demolist;
 
 import android.graphics.Color;
 import android.os.Bundle;
+import android.os.Environment;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.AlphaAnimation;
@@ -14,6 +16,19 @@ import android.view.animation.ScaleAnimation;
 import android.view.animation.TranslateAnimation;
 import android.widget.Button;
 import android.widget.ImageView;
+import com.hdsx.jts.io.ArcGisGeometryUtils;
+import com.vividsolutions.jts.geom.Coordinate;
+import com.vividsolutions.jts.geom.GeometryFactory;
+import com.vividsolutions.jts.geom.LineString;
+import com.vividsolutions.jts.geom.PrecisionModel;
+import com.vividsolutions.jts.io.WKBWriter;
+import com.vividsolutions.jts.geom.Geometry;
+import java.io.BufferedReader;
+import java.io.File;
+import com.vividsolutions.jts.geom.Polygon;
+import java.io.FileReader;
+import java.nio.ByteBuffer;
+import java.nio.ByteOrder;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -32,6 +47,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                read();
+            }
+        }).start();
 
         mHandler = new Handler();
 
@@ -186,5 +207,116 @@ public class MainActivity extends AppCompatActivity {
         toast.mView.removeAllViews();
         toast.initView();
     }
+
+    private void read(){
+        try {
+            File file = new File(Environment.getExternalStorageDirectory().getPath() + "/com.hdsx.lwcj/test.txt");
+            BufferedReader br = new BufferedReader(new FileReader(file));
+            String read_line = "";
+            StringBuffer sb = new StringBuffer();
+            while ((read_line = br.readLine()) != null) {
+                sb.append(read_line);
+            }
+            br.close();
+            byte[] data=Base64.decode(sb.toString());
+            //Geometry line= ArcGisGeometryUtils.WKBToGeometry(data);
+            LineString lineString=getLineString(data);
+            Log.e("lccxx",lineString.toString());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+
+    public Geometry getPolygon(byte[] bb) {
+        ByteBuffer bf = ByteBuffer.wrap(bb);
+        bf.order(ByteOrder.LITTLE_ENDIAN);
+        int type = bf.getInt();
+        int count = bf.getInt();
+
+        Coordinate[] cors = new Coordinate[count + 1];
+        for (int b = 0; b < count; b++) {
+            double x = bf.getDouble();
+            cors[b] = new Coordinate();
+            cors[b].y = x;
+        }
+        for (int b = 0; b < count; b++) {
+            double y = bf.getDouble();
+            cors[b].x = y;
+        }
+        cors[count] = new Coordinate();
+
+        cors[count].x = cors[0].x;
+        cors[count].y = cors[0].y;
+
+        return geof.createMultiPolygon(new Polygon[] { geof.createPolygon(cors) });
+    }
+
+    public Geometry getPolygon_bak(byte[] bb) {
+        ByteBuffer bf = ByteBuffer.wrap(bb);
+        bf.order(ByteOrder.LITTLE_ENDIAN);
+        int type = bf.getInt();
+        int count = bf.getInt();
+
+        Coordinate[] cors = new Coordinate[count + 1];
+        for (int b = 0; b < count; b++) {
+            double x = bf.getDouble();
+            cors[b] = new Coordinate();
+            cors[b].y = x;
+        }
+        for (int b = 0; b < count; b++) {
+            double y = bf.getDouble();
+            cors[b].x = y;
+        }
+        cors[count] = new Coordinate();
+
+        cors[count].x = cors[0].x;
+        cors[count].y = cors[0].y;
+
+        return geof.createPolygon(cors);
+    }
+
+    public LineString getLineString(byte[] bb) {
+        ByteBuffer bf = ByteBuffer.wrap(bb);
+        bf.order(ByteOrder.LITTLE_ENDIAN);
+        int type = bf.getInt();
+        int count = bf.getInt();
+
+        Coordinate[] cors = new Coordinate[count];
+        for (int b = 0; b < count; b++) {
+            double x = bf.getDouble();
+            cors[b] = new Coordinate();
+            cors[b].x = x;
+        }
+        for (int b = 0; b < count; b++) {
+            double y = bf.getDouble();
+            cors[b].y = y;
+        }
+        return geof.createLineString(cors);
+    }
+
+    public String bytes2String(byte[] bb) {
+        StringBuffer sb = new StringBuffer();
+        for (byte b : bb) {
+            String v = Integer.toHexString(b);
+            if (v.length() == 1) {
+                v = "0" + v;
+            } else {
+                v = v.substring(v.length() - 2, v.length());
+            }
+            sb.append(v);
+        }
+
+        return sb.toString();
+    }
+
+    public String geometry2wkb(Coordinate[] cors) {
+        LineString line = geof.createLineString(cors);
+        System.out.println(line);
+        WKBWriter writer = new WKBWriter(2);
+
+        return bytes2String(writer.write(line));
+    }
+    private static GeometryFactory geof = new GeometryFactory(new PrecisionModel(1E6), 4326);
 
 }

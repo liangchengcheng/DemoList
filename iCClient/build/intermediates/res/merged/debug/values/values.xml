@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">中间件寻卡示例</string>
+    <string name="button_ExitSystem">退出系统</string>
+    <string name="button_FiniInterface">退出中间件</string>
+    <string name="button_InitDevice">启动读写设备</string>
+    <string name="button_InitInterface">启动中间件</string>
+    <string name="button_Test">测试项目</string>
+    <string name="button_ValidateCard">查找电子证件</string>
+    <string name="common_Empty"/>
+    <string name="common_None">未知</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="textview_ADF">应用</string>
+    <string name="textview_Addr">住址</string>
+    <string name="textview_Birthday">出生日期</string>
+    <string name="textview_CPS">人员基本信息</string>
+    <string name="textview_CertOrgan">发证机关</string>
+    <string name="textview_Contact">联系地址</string>
+    <string name="textview_Education">文化程度</string>
+    <string name="textview_FirstDriveCertDate">初领驾驶证日期</string>
+    <string name="textview_Gender">性别</string>
+    <string name="textview_Name">姓名</string>
+    <string name="textview_Nation">民族</string>
+    <string name="textview_PermitDriveType">驾驶证准驾车型</string>
+    <string name="textview_QualifiNO">从业资格证件号</string>
+    <string name="textview_QualifiSort">从业资格类别</string>
+    <string name="textview_RTS">车辆基本信息</string>
+    <string name="textview_RTS_Addr">业户地址</string>
+    <string name="textview_RTS_AuthDate">发证日期</string>
+    <string name="textview_RTS_AuthOrgan">核发机关</string>
+    <string name="textview_RTS_Name">业户名称</string>
+    <string name="textview_RTS_VclModel">厂牌型号</string>
+    <string name="textview_RTS_VclPlate">车辆牌号</string>
+    <string name="textview_RTS_VclPlateColor">车牌颜色</string>
+    <string name="textview_RTS_VclSize">车辆尺寸</string>
+    <string name="textview_RTS_VclTonSeat">吨（座）位</string>
+    <string name="textview_RTS_VclType">车辆类型</string>
+    <string name="textview_RTS_WordNO">道路运输证号</string>
+    <string name="textview_ServOrgan">服务单位名称</string>
+    <string name="textview_TechTitle">技术职称</string>
+    <string name="textview_Tel">联系电话</string>
+    <string name="textview_ValidDateTo">证件有效期至</string>
+    <string name="textview_ZipCode">邮政编码</string>
+    <string name="title_activity_cps">从业资格证</string>
+    <string name="title_activity_cpsdemo">从业资格证</string>
+    <string name="title_activity_read_card">读卡</string>
+    <string name="title_activity_rts">道路运输证</string>
+    <string name="title_activity_rtsdemo">道路运输证</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="title_activity_trans">业务指令测试</string>
+    <string name="title_activity_update_card">更新卡片</string>
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+</resources>

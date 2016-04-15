@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="/Users/lcc/AndroidStudioProjects/DemoList/iCClient/src/main/assets"><file name="Zght/Client.zght" path="/Users/lcc/AndroidStudioProjects/DemoList/iCClient/src/main/assets/Zght/Client.zght"/></source></dataSet><dataSet config="debug"><source path="/Users/lcc/AndroidStudioProjects/DemoList/iCClient/src/debug/assets"/></dataSet></merger>

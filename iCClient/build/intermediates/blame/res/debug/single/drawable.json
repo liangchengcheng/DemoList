@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "/Users/lcc/AndroidStudioProjects/DemoList/iCClient/build/intermediates/res/merged/debug/drawable/set.png",
+        "source": "/Users/lcc/AndroidStudioProjects/DemoList/iCClient/src/main/res/drawable/set.png"
+    },
+    {
+        "merged": "/Users/lcc/AndroidStudioProjects/DemoList/iCClient/build/intermediates/res/merged/debug/drawable/bk.png",
+        "source": "/Users/lcc/AndroidStudioProjects/DemoList/iCClient/src/main/res/drawable/bk.png"
+    },
+    {
+        "merged": "/Users/lcc/AndroidStudioProjects/DemoList/iCClient/build/intermediates/res/merged/debug/drawable/stop.png",
+        "source": "/Users/lcc/AndroidStudioProjects/DemoList/iCClient/src/main/res/drawable/stop.png"
+    },
+    {
+        "merged": "/Users/lcc/AndroidStudioProjects/DemoList/iCClient/build/intermediates/res/merged/debug/drawable/down.png",
+        "source": "/Users/lcc/AndroidStudioProjects/DemoList/iCClient/src/main/res/drawable/down.png"
+    },
+    {
+        "merged": "/Users/lcc/AndroidStudioProjects/DemoList/iCClient/build/intermediates/res/merged/debug/drawable/mono.png",
+        "source": "/Users/lcc/AndroidStudioProjects/DemoList/iCClient/src/main/res/drawable/mono.png"
+    },
+    {
+        "merged": "/Users/lcc/AndroidStudioProjects/DemoList/iCClient/build/intermediates/res/merged/debug/drawable/no_128.png",
+        "source": "/Users/lcc/AndroidStudioProjects/DemoList/iCClient/src/main/res/drawable/no_128.png"
+    },
+    {
+        "merged": "/Users/lcc/AndroidStudioProjects/DemoList/iCClient/build/intermediates/res/merged/debug/drawable/re.png",
+        "source": "/Users/lcc/AndroidStudioProjects/DemoList/iCClient/src/main/res/drawable/re.png"
+    },
+    {
+        "merged": "/Users/lcc/AndroidStudioProjects/DemoList/iCClient/build/intermediates/res/merged/debug/drawable/exit.png",
+        "source": "/Users/lcc/AndroidStudioProjects/DemoList/iCClient/src/main/res/drawable/exit.png"
+    },
+    {
+        "merged": "/Users/lcc/AndroidStudioProjects/DemoList/iCClient/build/intermediates/res/merged/debug/drawable/next.png",
+        "source": "/Users/lcc/AndroidStudioProjects/DemoList/iCClient/src/main/res/drawable/next.png"
+    }
+]
