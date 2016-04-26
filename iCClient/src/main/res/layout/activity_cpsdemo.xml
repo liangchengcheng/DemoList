@@ -105,7 +105,6 @@
                 android:inputType="text"
                 android:text="@string/common_Empty"
                 android:textColor="#B0FB04" >
-
                 <requestFocus />
             </EditText>
             

@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/DemoList.iml" filepath="$PROJECT_DIR$/DemoList.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Dragger2Test/Dragger2Test.iml" filepath="$PROJECT_DIR$/Dragger2Test/Dragger2Test.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/iCClient/iCClient.iml" filepath="$PROJECT_DIR$/iCClient/iCClient.iml" />
       <module fileurl="file://$PROJECT_DIR$/progressdialog/progressdialog.iml" filepath="$PROJECT_DIR$/progressdialog/progressdialog.iml" />

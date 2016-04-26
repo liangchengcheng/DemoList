@@ -1,2 +1,2 @@
-include ':app', ':proxy', ':progressdialog', ':toastdemo', ':tipview'
+include ':app', ':proxy', ':progressdialog', ':toastdemo', ':tipview', ':Dragger2Test'
 include ':iCClient'

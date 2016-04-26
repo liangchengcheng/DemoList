@@ -436,13 +436,6 @@ public class MainActivity extends Activity implements OnClickListener {
     }
 
     @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.activity_main, menu);
-        return true;
-    }
-
-    @Override
     public void onClick(View v) {
         //
         int iValue, iTmp;
@@ -468,7 +461,7 @@ public class MainActivity extends Activity implements OnClickListener {
                 strTmp = ICClient.FiniInterface();
                 strTmp = String.format("中间件: %1$s", strTmp);
                 hdl_Show.obtainMessage(MSG_SHOW_SYNC, 0, 0, strTmp).sendToTarget();
-                this.finish();//�˳�
+                this.finish();//
                 break;
         }
 
