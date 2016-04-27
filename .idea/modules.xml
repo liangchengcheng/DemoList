@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/Dragger2Test/Dragger2Test.iml" filepath="$PROJECT_DIR$/Dragger2Test/Dragger2Test.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/iCClient/iCClient.iml" filepath="$PROJECT_DIR$/iCClient/iCClient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mvp-dragger-retrofit/mvp-dragger-retrofit.iml" filepath="$PROJECT_DIR$/mvp-dragger-retrofit/mvp-dragger-retrofit.iml" />
       <module fileurl="file://$PROJECT_DIR$/progressdialog/progressdialog.iml" filepath="$PROJECT_DIR$/progressdialog/progressdialog.iml" />
       <module fileurl="file://$PROJECT_DIR$/proxy/proxy.iml" filepath="$PROJECT_DIR$/proxy/proxy.iml" />
       <module fileurl="file://$PROJECT_DIR$/tipview/tipview.iml" filepath="$PROJECT_DIR$/tipview/tipview.iml" />
