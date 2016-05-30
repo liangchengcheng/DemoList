@@ -1,2 +1,2 @@
-include ':app', ':proxy', ':progressdialog', ':toastdemo', ':tipview', ':Dragger2Test', ':mvp-dragger-retrofit'
+include ':app', ':proxy', ':progressdialog', ':toastdemo', ':tipview', ':Dragger2Test', ':mvp-dragger-retrofit', ':GPSsatellite'
 include ':iCClient'

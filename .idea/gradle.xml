@@ -10,6 +10,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/Dragger2Test" />
+            <option value="$PROJECT_DIR$/GPSsatellite" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/iCClient" />
             <option value="$PROJECT_DIR$/mvp-dragger-retrofit" />
@@ -23,6 +24,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/Dragger2Test" />
+            <option value="$PROJECT_DIR$/GPSsatellite" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/iCClient" />
             <option value="$PROJECT_DIR$/mvp-dragger-retrofit" />

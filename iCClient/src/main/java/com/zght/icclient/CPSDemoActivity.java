@@ -74,7 +74,6 @@ public class CPSDemoActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_cpsdemo);
-		//
 		//取控件
 		edt_Name = (EditText)findViewById(R.id.editText_Name);
 		edt_Addr = (EditText)findViewById(R.id.editText_Addr);
